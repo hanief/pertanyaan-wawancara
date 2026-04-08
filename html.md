@@ -1,0 +1,7 @@
+# 5 pertanyaan wawancara HTML
+
+1. __Jelaskan mengapa HTML semantik itu penting?__ Karena HTML semantik menambahkan makna (bukan hanya tampilan) pada struktur. Ia juga meningkatkan aksesibilitas untuk pembaca layar, memperbaiki SEO, dan meningkatkan tingkat pemeliharaan kode.
+2. __Bagaimana peramban mengurai HTML dan menangani _markup_ yang tidak sempurna?__ Peramban membangun DOM berurutan. Ia menggunakan algoritma perbaikan galat HTML5 yang terstandarisasi (misal, menutup penanda otomatis) untuk menghindari kegagalan dan memastikan tampilan.
+3. __Apa perbedaan `<article>`, `<section>`, dan `<div>`?__ `<article>` untuk isi satuan yang bisa digabungkan (misal, sebuah artikel blog). `<section>` menggabungkan isi dengan tema sama, biasanya menggunakan judul. `<div>` adalah wadah umum yang digunakan untuk gaya atau skrip.
+4. __Apa itu elemen buatan (_custom elements_)?__ Ini adalah bagian dari _Web Components API_. Berkatnya, pengembang dapat mendefinisikan penanda HTML khusus buatan sendiri (misal, `<kartu-pengguna>`) dengan logika tersendiri dengan menggunakan kelas JavaScript.
+5. __Bagaimana cara menangani elemen HTML5 yang tak didukung?__ Peramban tua menganggap penanda yang tak dikenal sebagai elemen umum. Anda bisa memperbaiki ini dengan menambahkan `display: block` pada CSS dan menginjeksikannya melalui `document.createElement()`
