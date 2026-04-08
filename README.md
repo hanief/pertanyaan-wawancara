@@ -1,6 +1,6 @@
-# Pertanyaan dan jawaban wawancara insinyur perangkat lunak
+# Pertanyaan wawancara insinyur perangkat lunak
 
-- HTML (5 buah)
-- CSS
-- JavaScript
-- React
+- [HTML](https://github.com/hanief/pertanyaan-wawancara/blob/main/html.md) (5 buah)
+- [CSS](https://github.com/hanief/pertanyaan-wawancara/blob/main/css.md)
+- [JavaScript](https://github.com/hanief/pertanyaan-wawancara/blob/main/javascript.md)
+- [React](https://github.com/hanief/pertanyaan-wawancara/blob/main/react.md)
