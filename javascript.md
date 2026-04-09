@@ -1,1 +1,11 @@
-# 0 pertanyaan wawancara JavaScript
+# 10 pertanyaan wawancara JavaScript
+1. __Apa itu _Event Loop_?__ Mekanisme yang membuat JavaScript bisa melakukan operasi tak memblok dengan cara mengalihkan tugas-tugasnya ke API C++ peramban/Node dan mendorong _callback_ kembali ke tumpukan panggilan (_call stack_) lewat antrian tugas ketika tumpukan kosong.
+2. __Apa perbedaan antara _Macrotask_ dengan _Microtask_?__ Microtask (_Promise_, `process.nextTick`, `MutationObserver`) memiliki prioritas yang lebih tinggi dan dijalankan langsung setelah kode sinkronis terakhir selesai berjalan dan sebelum tumpukan mempersilakan Macrotask untuk dijalankan (`setTimeout`,`setInterval`, I/O).
+3. __Apa itu _Hoisting_?__ Itu adalah perilaku bawaan JavaScript yang memindahkan deklarasi variabel dan fungsi ke bagian paling atas dari masing-masing _scope_ sewaktu fase kompilasi, sebelum eksekusi.
+4. __Apa itu _Temporal Dead Zone (TDZ)_ / Zona Kematian Sementara?__ Waktu di antara memasuki _scope_ blok dan deklarasi variabel `let` atau `const`. Mencoba mengakses variabel di zona ini akan mengeluarkan `ReferenceError`.
+5. __Apa itu _Execution Context_?__ Lingkungan dimana kode JavaScript dievaluasi dan dieksekusi. Ia mengandung lingkungan variabel, lingkungan leksikal, dan nilai `this`.
+6. __Apa itu _Lexical Environment_ / Lingkungan Leksikal?__ Struktur internal yang memegang pemetaan identitas-variabel. Ia terdiri dari catatan lingkungan lokal dan referensi ke lingkungan leksikal luar (induk).
+7. __Apa kegunaan dari `"use strict"`?__ Memastikan penguraian dan penanganan galat yang lebih ketat, mencegah `global` secara tak sengaja, melarang nama parameter ganda, dan membuat `this` di dalam fungsi bernilai `undefined` alih-alih kembali ke obyek global.
+8. __Apa perbedaan `var`, `let`, dan `const`?__ `var` *scope*-nya adalah fungsi dan di-*hoist* dengan inisialisasi `undefined`. `let` dan `const` *scope*-nya adalah blok dan di-*hoist* tapi tidak diinisialisasi (dalam TDZ). `const` tidak bisa ditugaskan ulang.
+9. __Apa itu IIFE?__ *Immediately Invoked Function Expression*. Sebuah fungsi yang langsung dijalankan saat didefinisikan, ia menciptakan *scope* terisolasi agar tidak mencemari *namespace* global.
+10. __Bagaimana `this` ditentukan di JavaScript?__ `this` ditentukan dengan cara sebuah fungsi dipanggil, bukan dimana ia dipanggil. Ia menunjuk pada obyek yang memanggil metode, obyek global dalam sebuah fungsi normal, atau instan baru dalam sebuah konstruktor.
