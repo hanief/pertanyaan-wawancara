@@ -1,1 +1,11 @@
-# 0 pertanyaan wawancara React
+# 10 pertanyaan wawancara React
+1. __Apa itu DOM Virtual?__ Perwakilan DOM yang sebenarnya di dalam memori. React membandingkannya dengan cuplikan DOM virtual sebelumnya (Rekonsiliasi) untuk menghitung pembaruan penting paling minimal pada DOM yang sebenarnya. 
+2. __Apa itu *React Fiber*?__ Mesin rekonsiliasi React yang diluncurkan pada versi 16. Ia memungkinkan penampilan asinkron, sehingga membuat React bisa menjeda, mengagalkan, atau menggunakan kembali pekerjaan penampilan untuk memprioritaskan pembaruan dengan prioritas tinggi (seperti animasi).
+3. __Apa perbedaan antara Elemen dan Komponen?__ Sebuah elemen adalah obyek biasa yang menjelaskan apa yang anda lihat di layar (yang diciptakan lewat JSX). Sebuah komponen adalah sebuah fungsi atau kelas yang menerima input (props) dan mengembalikan sebuah elemen React.
+4. __Mengapa *key* diperlukan dalam sebuah daftar?__ *Key* membantu React mengenali *item* mana yang berubah, mana yang ditambahkan, atau mana yang sudah dihapus. Ia mencegah penampilan (*render*) ulang yang tidak perlu dan mencegah kesalahan antarmuka pengguna selama perubahan sebuah daftar.
+5. __Apa itu *Synthetic Event*/Kejadian Sintetis?__ Pembungkus React antar-peramban di sekitar *event*/kejadian asli peramban. Ia mengumpulkan kejadian-kejadian untuk keperluan performa dan memastikan perilaku yang seragam di antara seluruh jenis peramban.
+6. __Apa itu *Automatic Batching*/Pengumpulan Otomatis?__ Pengumpulan pembaruan-pembaruan beberapa *state*/keadaan ke dalam penampilang ulang tunggal untuk performa yang lebih baik. Ini terjadi dalam *promise*, *timeout*, atau *native event handler*.
+7. __Apa itu Portal React?__ Cara menampilkan *children*/turunan elemen menjadi DOM node di luar hierarki DOM komponen induk (cocok untuk *modal*, *tooltip*, dan *dropdown*)
+8. __Apa itu *Error Boundaries*?__ Komponen yang menangkap galat JavaScript dari manapun di dalam pohon komponen turunan mereka. Ia bisa mencatat galat-galat tersebutm dan menampilkan antarmuka pengguna cadangan daripada membuat seluruh pohon gagal.
+9. __Apa itu React.StrictMode?__ Sebuah alat pengembangan yang menyoroti potensi masalah dengan memanggil komponen dua kali, menampilkan peringatan *deprecation*/pelepasan, dan mendeteksi efek samping yang tak terduga.
+10. __Apa perbedaan antara komponen terkontrol dengan yang tidak terkontrol?__ Di komponen terkontrol, data borang ditangani oleh state React. Sementara di komponen tak terkontrol, data borang ditangani oleh DOM itu sendiri (dengan akses lewat `useRef`).
