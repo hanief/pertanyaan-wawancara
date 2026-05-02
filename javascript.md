@@ -1,4 +1,4 @@
-# 11 pertanyaan wawancara JavaScript
+# 12 pertanyaan wawancara JavaScript
 
 1. **Apa itu _Event Loop_?** Mekanisme yang membuat JavaScript bisa melakukan operasi tak memblok dengan cara mengalihkan tugas-tugasnya ke API C++ peramban/Node dan mendorong _callback_ kembali ke tumpukan panggilan (_call stack_) lewat antrian tugas ketika tumpukan kosong.
 2. **Apa perbedaan antara _Macrotask_ dengan _Microtask_?** Microtask (_Promise_, `process.nextTick`, `MutationObserver`) memiliki prioritas yang lebih tinggi dan dijalankan langsung setelah kode sinkronis terakhir selesai berjalan dan sebelum tumpukan mempersilakan Macrotask untuk dijalankan (`setTimeout`,`setInterval`, I/O).
@@ -11,3 +11,4 @@
 9. **Apa itu IIFE?** _Immediately Invoked Function Expression_. Sebuah fungsi yang langsung dijalankan saat didefinisikan, ia menciptakan _scope_ terisolasi agar tidak mencemari _namespace_ global.
 10. **Bagaimana `this` ditentukan di JavaScript?** `this` ditentukan dengan cara sebuah fungsi dipanggil, bukan dimana ia dipanggil. Ia menunjuk pada obyek yang memanggil metode, obyek global dalam sebuah fungsi normal, atau instan baru dalam sebuah konstruktor.
 11. **Bagaimana cara `this` berjalan di fungsi panah (_Arrow_)?** Fungsi panah (_arrow_) tidak mempunyai konteks `this` mandiri. Mereka mengikat `this` secara leksikal, yakni mewarisinya dari lingkungan ketika mereka diciptakan.
+12. **Apa itu `call`, `apply`, dan `bind`?** Metode yang digunakan untuk menetapkan konteks `this` sebuah fungsi. `call` meneruskan argumen-argumen satu demi satu, `apply` meneruskan argumen-argumen sebagai array, dan `bind` mengembalikan fungsi baru dengan `this` ditetapkan permanen.

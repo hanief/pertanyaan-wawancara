@@ -1,4 +1,4 @@
-# 11 pertanyaan wawancara React
+# 12 pertanyaan wawancara React
 
 1. **Apa itu DOM Virtual?** Perwakilan DOM yang sebenarnya di dalam memori. React membandingkannya dengan cuplikan DOM virtual sebelumnya (Rekonsiliasi) untuk menghitung pembaruan penting paling minimal pada DOM yang sebenarnya.
 2. **Apa itu _React Fiber_?** Mesin rekonsiliasi React yang diluncurkan pada versi 16. Ia memungkinkan penampilan asinkron, sehingga membuat React bisa menjeda, mengagalkan, atau menggunakan kembali pekerjaan penampilan untuk memprioritaskan pembaruan dengan prioritas tinggi (seperti animasi).
@@ -11,3 +11,4 @@
 9. **Apa itu React.StrictMode?** Sebuah alat pengembangan yang menyoroti potensi masalah dengan memanggil komponen dua kali, menampilkan peringatan _deprecation_/pelepasan, dan mendeteksi efek samping yang tak terduga.
 10. **Apa perbedaan antara komponen terkontrol dengan yang tidak terkontrol?** Di komponen terkontrol, data borang ditangani oleh state React. Sementara di komponen tak terkontrol, data borang ditangani oleh DOM itu sendiri (dengan akses lewat `useRef`).
 11. **Apa itu Hidrasi (_Hydration_)?** Sebuah proses dimana React menyematkan pendengar even (_event listener_) pada HTML statis yang telah di-_render_ yang dikirimkan dari peladen (_server_), yang membuat halaman tersebut bisa interaktif.
+12. **Apa sebenarnya JSX itu?** JSX adalah gula sintaksis yang terkompilasi menjadi `React.createElement(component, props, ...children)` (atau runtime `_jsx` terbaru di React 17+).
